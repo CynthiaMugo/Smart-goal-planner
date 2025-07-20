@@ -25,7 +25,7 @@ function GoalList() {
 
     return (
         <div className="goal-list-container">
-            <h2>My Savings Goals</h2>
+            <h2>MY SAVINGS GOALS</h2>
             <GoalForm onAddGoal={(newGoal) => setGoals([...goals, newGoal])} />
             <div className="goal-list">
                 {goals.map((goal) => (

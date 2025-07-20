@@ -30,13 +30,13 @@ function Overview() {
     };
     return (
         <div className="overview">
-            <h2>📊 Savings Overview</h2>
+            <h2>Savings Overview</h2>
             <p><strong>Total Goals:</strong> {totalGoals}</p>
             <p><strong>Total Saved:</strong> ${totalSaved.toLocaleString()}</p>
             <p><strong>Goals Completed:</strong> {completedGoals}</p>
 
             <h3>Status by Goal:</h3>
-            <ul>
+            <ul className="goal-status-list">
                 {goals.map((goal) => (
                     <li key={goal.id}>
                         <strong>{goal.name}:</strong> {getStatus(goal)}
