@@ -21,7 +21,7 @@ function Overview() {
         if (daysLeft < 0 && goal.savedAmount < goal.targetAmount) {
             return "Overdue!";
         } else if (daysLeft <= 30 && goal.savedAmount < goal.targetAmount) {
-            return `${daysLeft} days left (Warning!)`;
+            return `${daysLeft} days left Warning!`;
         } else if (goal.savedAmount >= goal.targetAmount) {
             return "Goal Completed";
         } else {
