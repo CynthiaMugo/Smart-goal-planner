@@ -1,5 +1,7 @@
 import React, { useState, useEffect, use} from "react";
 import GoalCard from './GoalCard.jsx';
+import GoalForm from './GoalForm.jsx';
+
 
 function GoalList() {
     const [goals, setGoals] = useState([]);
@@ -16,6 +18,7 @@ function GoalList() {
     return (
         <div className="goal-list-container">
             <h2>My Savings Goals</h2>
+            <GoalForm onAddGoal={(newGoal) => setGoals([...goals, newGoal])} />
             <div className="goal-list">
                 {goals.map((goal) => (
                     <GoalCard key={goal.id} goal={goal} />

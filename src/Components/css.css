@@ -13,7 +13,10 @@
     gap: 20px;
     border-radius: 10px;
 }
-
+.goal-list-container h2 {
+    text-align: center;
+    color: #343a40;
+}
 .goal-card {
     background-color: #ffffff;
     border: 1px solid #dee2e6;

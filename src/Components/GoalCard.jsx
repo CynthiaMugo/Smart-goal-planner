@@ -14,7 +14,7 @@ function GoalCard({ goal}) {
             <p>Created On: {formattedCreatedAt}</p>
             <div className="progress-bar">
                 <div className="progress" style={{ width: `${percentage}%`, 
-                                    backgroundColor: percentage === "100" ? "green" : "blue", 
+                                    backgroundColor: percentage === "100" ? "green" : "forestgreen", 
                                     padding: "5px", 
                                     color: "white", 
                                     borderRadius: "10px", 
