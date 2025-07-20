@@ -25,8 +25,8 @@ function GoalList() {
 
     return (
         <div className="goal-list-container">
-            <h2>MY SAVINGS GOALS</h2>
             <GoalForm onAddGoal={(newGoal) => setGoals([...goals, newGoal])} />
+                <h2>MY SAVINGS GOALS</h2>
             <div className="goal-list">
                 {goals.map((goal) => (
                     <GoalCard key={goal.id} goal={goal} onDeposit={handleDeposit} onDelete={(id) => {
