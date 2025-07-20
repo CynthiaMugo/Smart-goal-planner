@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function GoalCard({ goal, onDeposit }) {
+function GoalCard({ goal, onDeposit, onDelete }) {
     const { id, name, targetAmount, savedAmount, category, deadline, createdAt } = goal;
     const remaining = targetAmount - savedAmount;
     const formattedCreatedAt = new Date(createdAt).toLocaleDateString();
@@ -25,6 +25,15 @@ function GoalCard({ goal, onDeposit }) {
                 setShowDeposit(false);
             });
         };
+        // functionality to delete button
+        const handleDelete = () => {
+            fetch(`http://localhost:3000/goals/${id}`, {
+                method: "DELETE",
+            })
+                .then(() => {
+                onDelete(id);
+                });
+            };
 
     return (
         <div className="goal-card">
@@ -48,7 +57,7 @@ function GoalCard({ goal, onDeposit }) {
             <div className="actions">
                 <button className="actions-button" id="edit">Edit</button>
                 <button className="actions-button" id="deposit" onClick={() => setShowDeposit(!showDeposit)}>{showDeposit ? "Cancel" : "Deposit"}</button>
-                <button className="actions-button" id="delete">Delete</button>
+                <button className="actions-button" id="delete"onClick={handleDelete}>Delete</button>
             </div>
             <div className="deposit-container">
                 {showDeposit && (

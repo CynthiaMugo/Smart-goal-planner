@@ -29,7 +29,9 @@ function GoalList() {
             <GoalForm onAddGoal={(newGoal) => setGoals([...goals, newGoal])} />
             <div className="goal-list">
                 {goals.map((goal) => (
-                    <GoalCard key={goal.id} goal={goal} onDeposit={handleDeposit}/>
+                    <GoalCard key={goal.id} goal={goal} onDeposit={handleDeposit} onDelete={(id) => {
+                            setGoals(goals.filter((goal) => goal.id !== id));
+                        }}/>
                 ))}
             </div>
         </div>
