@@ -58,7 +58,7 @@
       "id": "8",
       "name": "Smartwatch Upgrade",
       "targetAmount": 400,
-      "savedAmount": 200,
+      "savedAmount": 300,
       "category": "Electronics",
       "deadline": "2025-04-01",
       "createdAt": "2024-07-13"
@@ -84,11 +84,20 @@
     {
       "name": "Trip to Diani Kenya for Beach Please Festival",
       "targetAmount": 600,
-      "savedAmount": 0,
+      "savedAmount": 300,
       "category": "Travel",
       "deadline": "2025-12-02",
       "createdAt": "2025-07-20",
       "id": "QPdOuMI"
+    },
+    {
+      "name": "React Developer Course & Certification",
+      "targetAmount": 300,
+      "savedAmount": 100,
+      "category": "Education",
+      "deadline": "2025-10-15",
+      "createdAt": "2025-07-20",
+      "id": "9ml6m7c"
     }
   ]
 }

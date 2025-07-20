@@ -25,7 +25,7 @@ function GoalForm({ onAddGoal }) {
       .then((r) => r.json())
       .then((data) => {
         onAddGoal(data);
-        // reset form
+        // reset add goal form fields
         setName("");
         setTargetAmount("");
         setCategory("");
@@ -37,34 +37,11 @@ function GoalForm({ onAddGoal }) {
             <form onSubmit={handleSubmit} className="goal-form">
                 <h2>Add New Goal</h2>
                 <div className="goal-form-fields">
-                    <input
-                        type="text"
-                        placeholder="Goal Name"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                    <input
-                        type="number"
-                        placeholder="Target Amount"
-                        value={targetAmount}
-                        onChange={(e) => setTargetAmount(e.target.value)}
-                        required
-                    />
-                    <input
-                        type="text"
-                        placeholder="Category"
-                        value={category}
-                        onChange={(e) => setCategory(e.target.value)}
-                        required
-                    />
+                    <input type="text" placeholder="Goal Name" value={name} onChange={(e) => setName(e.target.value)} required/>
+                    <input type="number" placeholder="Target Amount" value={targetAmount} onChange={(e) => setTargetAmount(e.target.value)} required/>
+                    <input type="text" placeholder="Category" value={category} onChange={(e) => setCategory(e.target.value)} required/>
                     <label htmlFor="">Deadline: </label>
-                    <input
-                        type="date"
-                        value={deadline}
-                        onChange={(e) => setDeadline(e.target.value)}
-                        required
-                    />
+                    <input type="date" value={deadline} onChange={(e) => setDeadline(e.target.value)} required/>
                     <button type="submit">Add Goal</button>
                 </div>
         </form>
