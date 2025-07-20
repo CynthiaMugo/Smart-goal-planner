@@ -48,7 +48,7 @@ function GoalCard({ goal, onDeposit, onDelete, onEdit }) {
             <p>Deadline: {deadline}</p>
             <p>Created On: {formattedCreatedAt}</p>
             <div className="progress-bar">
-                <div className="progress" style={{ width: `${percentage}%`, backgroundColor: percentage === "100" ? "green" : "forestgreen", padding: "5px", color: "white", borderRadius: "10px", textAlign: "center" }}>
+                <div className="progress" style={{ width: `${percentage}%`, backgroundColor: percentage === "100" ? "darkgreen" : "green", padding: "5px", color: "white", borderRadius: "10px", textAlign: "center" }}>
                     {percentage}%
                 </div>
             </div>
@@ -84,8 +84,7 @@ function GoalCard({ goal, onDeposit, onDelete, onEdit }) {
                         });
                     }}
                     className="edit-form">
-                    <input type="text" value={editedGoal.name}
-                    onChange={(e) => setEditedGoal({ ...editedGoal, name: e.target.value })}/>
+                    <input type="text" value={editedGoal.name} onChange={(e) => setEditedGoal({ ...editedGoal, name: e.target.value })}/>
                     <input type="number" value={editedGoal.targetAmount} onChange={(e) => setEditedGoal({ ...editedGoal, targetAmount: e.target.value })}/>
                     <input type="text" value={editedGoal.category} onChange={(e) => setEditedGoal({ ...editedGoal, category: e.target.value })}/>
                     <input type="date" value={editedGoal.deadline} onChange={(e) => setEditedGoal({ ...editedGoal, deadline: e.target.value })}/>
