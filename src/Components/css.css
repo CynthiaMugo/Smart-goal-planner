@@ -3,6 +3,7 @@
     background-color: #e9ecef;
     padding: 8px;
     border-radius: 10px;
+    border-left: 6px solid #34495e;
 }
 .goal-list {
     padding: 20px;
@@ -12,6 +13,7 @@
     justify-content: space-between;
     gap: 20px;
     border-radius: 10px;
+    border-left: 6px solid #34495e;
 }
 .goal-list-container h2 {
     text-align: center;
@@ -57,4 +59,41 @@
 }
 #delete:hover {
     background-color: #a71d2a
+}
+
+/* Goal form styles */
+.goal-form-container {
+    background-color: #e9ecef;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    border-left: 6px solid #34495e;
+}
+.goal-form-container h2 {
+    text-align: center;
+    color: #343a40;
+}
+.goal-form-fields input {
+    margin: 5px;
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.goal-form-fields button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 18%;
+    border-radius: 3px;
+    cursor: pointer;
+
+}
+
+.goal-form-fields button:hover {
+    background-color: #0056b3;
 }
