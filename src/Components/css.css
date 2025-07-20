@@ -115,3 +115,20 @@
     border-radius: 3px;
     cursor: pointer;
 }
+.edit-form input{
+    margin: 5px;
+    width: 35%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.edit-form button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 18%;
+    border-radius: 3px;
+    cursor: pointer;
+}

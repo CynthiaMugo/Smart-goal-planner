@@ -12,8 +12,8 @@
     {
       "id": "2",
       "name": "Pet Emergency Fund",
-      "targetAmount": 3000,
-      "savedAmount": 1400,
+      "targetAmount": "4000",
+      "savedAmount": 3400,
       "category": "Emergency",
       "deadline": "2025-11-01",
       "createdAt": "2024-01-10"

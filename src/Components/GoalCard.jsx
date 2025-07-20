@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function GoalCard({ goal, onDeposit, onDelete }) {
+function GoalCard({ goal, onDeposit, onDelete, onEdit }) {
     const { id, name, targetAmount, savedAmount, category, deadline, createdAt } = goal;
     const remaining = targetAmount - savedAmount;
     const formattedCreatedAt = new Date(createdAt).toLocaleDateString();
