@@ -14,9 +14,9 @@ function GoalList() {
         .catch((error) => console.error("Error fetching goals:", error));
     }, []);
     return (
-        <div>
+        <div className="goal-list-container">
             <h2>My Savings Goals</h2>
-            <div>
+            <div className="goal-list">
                 {goals.map((goal) => (
                     <GoalCard key={goal.id} goal={goal} />
                 ))}
