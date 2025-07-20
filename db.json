@@ -4,7 +4,7 @@
       "id": "1",
       "name": "Trip to Iceland",
       "targetAmount": 6000,
-      "savedAmount": 2500,
+      "savedAmount": 2900,
       "category": "Travel",
       "deadline": "2026-05-30",
       "createdAt": "2024-02-18"
@@ -13,7 +13,7 @@
       "id": "2",
       "name": "Pet Emergency Fund",
       "targetAmount": 3000,
-      "savedAmount": 1100,
+      "savedAmount": 1400,
       "category": "Emergency",
       "deadline": "2025-11-01",
       "createdAt": "2024-01-10"

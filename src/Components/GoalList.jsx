@@ -15,13 +15,21 @@ function GoalList() {
         })
         .catch((error) => console.error("Error fetching goals:", error));
     }, []);
+
+    // deposit functionality
+    const handleDeposit = (updatedGoal) => {
+    setGoals((prevGoals) =>
+        prevGoals.map((goal) => goal.id === updatedGoal.id ? updatedGoal : goal)
+    );
+    };
+
     return (
         <div className="goal-list-container">
             <h2>My Savings Goals</h2>
             <GoalForm onAddGoal={(newGoal) => setGoals([...goals, newGoal])} />
             <div className="goal-list">
                 {goals.map((goal) => (
-                    <GoalCard key={goal.id} goal={goal} />
+                    <GoalCard key={goal.id} goal={goal} onDeposit={handleDeposit}/>
                 ))}
             </div>
         </div>
