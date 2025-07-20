@@ -31,6 +31,9 @@ function GoalList() {
                 {goals.map((goal) => (
                     <GoalCard key={goal.id} goal={goal} onDeposit={handleDeposit} onDelete={(id) => {
                             setGoals(goals.filter((goal) => goal.id !== id));
+                        }}
+                        onEdit={(updatedGoal) => {
+                            setGoals(goals.map((goal) => goal.id === updatedGoal.id ? updatedGoal : goal));
                         }}/>
                 ))}
             </div>
